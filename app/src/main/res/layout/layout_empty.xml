@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="isShow"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:isVisible="@{isShow}"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/emptyIv"
+            android:layout_width="240dp"
+            android:src="@drawable/empty_order"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/contentDescription"
+            app:isVisible="@{isShow}"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/emptyTv"
+            app:layout_constraintTop_toBottomOf="@+id/emptyIv"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/color_10161c"
+            android:layout_marginTop="10dp"
+            app:isVisible="@{isShow}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/empty_order"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

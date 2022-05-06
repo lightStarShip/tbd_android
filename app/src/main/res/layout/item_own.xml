@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.star.theBigDipper.util.Utils" />
+
+        <variable
+            name="item"
+            type="com.star.theBigDipper.viewmodel.OwnPoolItemVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/top_background_iv"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@{item.index %2 ==0 ? @drawable/bg_own_pool_top_blue :  @drawable/bg_own_pool_top_red}"
+            android:contentDescription="@string/contentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mine_pool_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:text="@{item.own.name}"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="名字" />
+
+        <TextView
+            android:id="@+id/adress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:text="@{item.own.address}"
+            android:textColor="@color/color_white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mine_pool_name_tv" />
+
+        <TextView
+            android:id="@+id/recharge_tv"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_buy_packet"
+            android:gravity="center"
+            android:text="@string/my_pool_renewal_fee"
+            android:textColor="@color/color_6791c8"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/top_background_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_background_iv"
+            app:onClickCommand="@{item.rechargeCommand}"
+            tools:text="续费" />
+
+
+        <ImageView
+            android:id="@+id/bottom_background_iv"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@{item.index %2 ==0 ? @drawable/bg_minepool_bottom_blue :  @drawable/bg_minepool_bottom_red}"
+            android:contentDescription="@string/contentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_background_iv" />
+
+
+        <TextView
+            android:id="@+id/packets_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@{item.packets}"
+            app:layout_constraintEnd_toStartOf="@+id/token_tv"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bottom_background_iv"
+            tools:text="流量" />
+
+        <TextView
+            android:id="@+id/token_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@{item.token}"
+            app:layout_constraintEnd_toStartOf="@+id/credit_tv"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/packets_tv"
+            app:layout_constraintTop_toTopOf="@+id/bottom_background_iv"
+            tools:text="token" />
+
+        <TextView
+            android:id="@+id/credit_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:text="@{item.credit}"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/token_tv"
+            app:layout_constraintTop_toTopOf="@+id/bottom_background_iv"
+            tools:text="credit" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@drawable/split_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

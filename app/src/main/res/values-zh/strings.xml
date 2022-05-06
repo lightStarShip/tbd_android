@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">北斗星</string>
+    <string name="hop">HOP</string>
+    <string name="tips">提示</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="ethLabel">ETH</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_wallet">钱包</string>
+    <string name="open_wallet">开启钱包</string>
+    <string name="mine_machine">矿机列表</string>
+    <string name="contentDescription"> </string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="testing_speed">测速中…</string>
+    <string name="copy_success">复制成功!</string>
+    <string name="password_error">密码错误</string>
+    <string name="wallet_error">请扫描正确钱包二维码</string>
+    <string name="save_error">钱包本地存储失败</string>
+    <string name="protocol_topped">服务已停止，杀死app从新进入</string>
+    <string name="no_walet">钱包读取失败，杀死app从新进入</string>
+    <string name="camera">需要访问您的摄像头</string>
+    <string name="loading_success">加载成功</string>
+    <string name="tab_flow_market">流量市场</string>
+    <string name="approving">区块链\n授权中…</string>
+    <string name="creating_tx">创建区块交易中…</string>
+    <string name="empty_order">暂无数据,下拉刷新</string>
+    <string name="get_data_failed">获取数据失败!</string>
+    <string name="create_account_failed">创建失败</string>
+    <string name="notification_title">北斗星网络</string>
+    <string name="wallet_get_free_coin_title">领取测试币</string>
+    <string name="rationale_extra_write">需要申请读写内存权限</string>
+    <string name="packets_insufficient_need_recharge">流量不足，需要充值</string>
+    <string name="blockchain_time_out">区块同步超时，\n请确认上个区块打包成功后再次操作</string>
+    <string name="apply_free_coin_blockchain_time_out">区块同步超时，\n查看区块是否同步成功</string>
+
+    <!--    创建账号-->
+    <string name="create_account_or">or</string>
+    <string name="create_account_create">创建</string>
+    <string name="creating_account">创建账号中…</string>
+    <string name="create_account_title">创建账号</string>
+    <string name="create_account_success">创建账号成功</string>
+    <string name="create_account_read_album">从相册读取</string>
+    <string name="create_account_import_private_key">导入imtoken私钥</string>
+    <string name="create_account_input_private_key">输入imtoken私钥</string>
+    <string name="create_account_empty_account">空账号</string>
+    <string name="create_account_enter_password">输入密码</string>
+    <string name="create_account_import_success">导入成功</string>
+    <string name="create_account_import_account">导入账号</string>
+    <string name="create_account_reenter_password">再次输入密码</string>
+    <string name="create_account_scanning_qr_code">扫描二维码读取</string>
+    <string name="create_account_import_error">导入账号二维码失败:</string>
+    <string name="create_account_select_import_mode">请选择导入方式</string>
+    <string name="create_account_import_account_failed">导入账号失败</string>
+    <string name="create_account_error_import_image">没有导入正确图片</string>
+    <string name="create_account_twice_password_not_same">两次密码输入不一致</string>
+    <string name="create_account_enter_ethereum_password">请输入以太坊钱包密码</string>
+    <string name="create_account_scan_pirate_account_qr">请扫描pirate账号二维码</string>
+    <string name="create_account_import_imtoken_error">导入imtoken失败</string>
+    <string name="create_account_imtoken_error">imtoken私钥错误</string>
+
+    <!--   首页 -->
+    <string name="home_use">已连接</string>
+    <string name="home_connect">连接中…</string>
+    <string name="home_disconnected">未连接</string>
+    <string name="home_global_model">全局模式</string>
+    <string name="home_uncleared_flow">已用流量</string>
+    <string name="home_current_use_flow">充值流量</string>
+    <string name="home_intelligent_model">智能模式</string>
+    <string name="home_select_miner">请选择矿池下的矿机</string>
+    <string name="home_init_service_fail">服务启动失败，请再次开启</string>
+    <string name="home_select_subscribed_mining_pool">请选择已经订阅的矿池</string>
+    <string name="home_switch_testnet">切换测试网</string>
+    <string name="home_switch_mainnet">切换正式网</string>
+    <string name="home_switch_testnet_message">退出app,切换为测试网络，可以在钱包界面领取币免费测试币体验App</string>
+    <string name="home_switch_mainnet_message">退出app,切换为正式网，切换正式网之后将无法再次切换为测试网。</string>
+    <string name="home_sync_data">正在同步区块数据，请稍后开启</string>
+    <string name="home_sync_data_error">同步区块失败，再次同步</string>
+
+    <!--   流量市场 -->
+    <string name="bytes_g">G</string>
+    <string name="total_bytes_g">总使用流量:</string>
+    <string name="total_recharge">总充值次数:</string>
+    <string name="last_month_used_bytes">上个月使用流量：</string>
+    <string name="last_day_used_bytes">昨天使用流量：</string>
+    <string name="market_my_pool">我的矿池</string>
+    <string name="market_websiteAddress">URL：</string>
+
+    <!--钱包-->
+    <string name="wallet__dns">DNS:</string>
+    <string name="wallet_help">寻求帮助</string>
+    <string name="wallet_token_unit">hop</string>
+    <string name="wallet_course">挖矿教程</string>
+    <string name="wallet_export">导出账号</string>
+    <string name="wallet_create">创建/导入</string>
+    <string name="wallet_flow_unit_hop">HOP</string>
+    <string name="wallet_flow_unit_eth">ETH</string>
+    <string name="wallet_apply_fail">领取失败</string>
+    <string name="wallet_export_fail">导出失败</string>
+    <string name="wallet_transaction">交易记录</string>
+    <string name="wallet_clear_success">操作成功</string>
+    <string name="wallet_apply_success">领取成功</string>
+    <string name="wallet_get_free_coin">立即领取</string>
+    <string name="wallet_export_success">导出成功</string>
+    <string name="wallet_new_version">查看最新版本</string>
+    <string name="wallet_operation_guide">操作指南</string>
+    <string name="wallet__replace_msg">替换当前账号?</string>
+    <string name="wallet_dns_empty">请输入新的DNS地址</string>
+    <string name="wallet_get_free_eth">0.1 eth测试币</string>
+    <string name="wallet_pirate_account">pirate 账号.jpg</string>
+    <string name="wallet_get_free_hop">1000 Hop测试币</string>
+    <string name="wallet_clear_local_data">清除本地数据</string>
+    <string name="wallet_main_network_address">主网地址</string>
+    <string name="wallet_dns_failed">请输入正确的DNS地址</string>
+    <string name="wallet_replace_account_title">您确定?</string>
+    <string name="wallet_please_create_account">请先创建账号</string>
+    <string name="wallet_update_dns_success">修改成功,请再次打开App</string>
+    <string name="wallet_help_address">https://t.me/hopcommunity</string>
+    <string name="wallet_course_address">https://docs.hyperorchid.org/</string>
+    <string name="wallet_apply_free_token_des">当eth少于0.05个时可以申请eth,当hop少于1000个时可以申请token</string>
+
+    <!--  交易记录  -->
+    <string name="transaction_hash">Hash</string>
+    <string name="transaction_error">打包失败</string>
+    <string name="transaction_completed">已完成</string>
+    <string name="transaction_pending">正在打包中</string>
+    <string name="pull_down_refresh">下拉刷新区块链打包状态</string>
+
+    <!-- 我的矿池   -->
+    <string name="recharge_hop_address">Hop地址</string>
+    <string name="my_pool_renewal_fee">续费</string>
+
+    <!--    充值-->
+    <string name="recharge_recharge">Buy</string>
+    <string name="recharge_custom">自定义</string>
+    <string name="recharge_hop_coin">余额</string>
+    <string name="recharge_hop_money">金额</string>
+    <string name="recharge_buy_flow">购买流量</string>
+    <string name="recharge_sync_pool">同步矿池</string>
+    <string name="recharge_submit_order">提交订单</string>
+    <string name="recharge_approve_error">授权失败</string>
+    <string name="recharge_recharge_flow">充值流量</string>
+    <string name="recharge_buy_flow_number">流量(M)</string>
+    <string name="recharge_sync_pool_failed">同步失败</string>
+    <string name="recharge_sync_pool_success">同步成功</string>
+    <string name="recharge_buy_packets_error">购买失败</string>
+    <string name="recharge_buy_packets">区块链\n购买流量中…</string>
+    <string name="recharge_pending">交易正在打包，请勿重复操作</string>
+    <string name="recharge_packets_mine_pool_address">矿池地址</string>
+    <string name="recharge_eth_insufficient_balance">ETH余额不足!</string>
+    <string name="recharge_token_insufficient_balance">HOP 余额不足!</string>
+    <!--    矿机列表-->
+    <string name="mine_machine_list_pin_all_miners">整体测速</string>
+    <string name="mining_pool_exchange_mine_pool">切换矿池中…</string>
+    <string name="mine_machine_measurement_network_speed">测试速度</string>
+
+    <!--    欢迎界面-->
+    <string name="splash_update_version">更新</string>
+    <string name="splash_new_version">发现新版本</string>
+    <string name="splash_current_version_name">当前版本</string>
+    <string name="splash_network_unavailable">当前网络不可用,请开启网络</string>
+    <string name="splash_close_other_vpn_app">请关闭其他VPN App</string>
+    <string name="splash_blockchain_sync_error">区块同步异常，请点击确认再次同步</string>
+    <string name="splash_forbidden_permission_des">权限拒绝无法使用app,重新申请。</string>
+
+    <string name="guide1">1.选择钱包</string>
+    <string name="guide2">2.获取ETH测试币</string>
+    <string name="guide3">3.获取Hop测试币</string>
+    <string name="guide4">4.选择流量市场</string>
+    <string name="guide5">5.矿池购买流量</string>
+    <string name="guide6">6.选择购买流量大小</string>
+    <string name="guide7">7.选择已购矿池</string>
+    <string name="guide8">8.选择矿机</string>
+    <string name="guide9">9.开启vpn</string>
+
+
+</resources>

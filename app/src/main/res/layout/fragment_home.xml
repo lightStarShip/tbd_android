@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.star.theBigDipper.viewmodel.TabHomeVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_fbfbfc"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/main_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/contentDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/layout_title"
+            app:viewModel="@{viewModel}"
+            android:id="@+id/title_layout" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/split_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/service_switch_tv"
+                    android:background="@drawable/tab_home_switch_shadow"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/service_switch_tv"
+                    android:layout_width="wrap_content"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    onClickCommand="@{viewModel.changeVPNStatusCommand}"
+                    android:textColor="@color/color_515257"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_home_switch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="54dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pirate_network_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/home_disconnected"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_a4a4a7"
+                    app:layout_constraintBottom_toBottomOf="@+id/service_switch_tv"
+                    android:layout_marginBottom="42dp"
+                    app:layout_constraintStart_toStartOf="@+id/service_switch_tv"
+                    app:layout_constraintEnd_toEndOf="@+id/service_switch_tv" />
+
+                <RadioGroup
+                    android:id="@+id/network_model_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    onCheckedChangedCommand="@{viewModel.changeModelCommand}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/service_switch_tv">
+
+
+                    <RadioButton
+                        android:id="@+id/intelligent_model_rbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/radiobutton_smart_bg"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/home_intelligent_model"
+                        android:textColor="@drawable/model_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:focusable="true" />
+
+                    <RadioButton
+                        android:id="@+id/global_model_rbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="16dp"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableTop="@drawable/radiobutton_global_bg"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/home_global_model"
+                        android:textColor="@drawable/model_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/home_bottom_iv"
+                    android:layout_width="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toBottomOf="@+id/network_model_rg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/color_white"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:id="@+id/home_mining_pool_iv"
+                    android:layout_width="0dp"
+                    android:background="@drawable/bg_home_mining"
+                    app:layout_constraintTop_toTopOf="@+id/home_bottom_iv"
+                    app:layout_constraintStart_toStartOf="@+id/home_bottom_iv"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="16dp"
+                    onClickCommand="@{viewModel.slelctPoolCommand}"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/home_bottom_iv"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/miner_pool_tv"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/home_mining_pool_iv"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    onClickCommand="@{viewModel.slelctPoolCommand}"
+                    app:layout_constraintTop_toTopOf="@+id/home_mining_pool_iv"
+                    app:layout_constraintEnd_toStartOf="@+id/select_miner_pool_iv"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_mining_pool_iv"
+                    android:layout_marginStart="16dp"
+                    tools:text="矿池01"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/color_10161c"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/select_miner_pool_iv"
+                    android:layout_width="wrap_content"
+                    onClickCommand="@{viewModel.slelctPoolCommand}"
+                    android:src="@drawable/tab_home_select_mining"
+                    app:layout_constraintTop_toTopOf="@+id/home_mining_pool_iv"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_mining_pool_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/home_mining_pool_iv"
+                    android:layout_marginEnd="12dp"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/home_miner_machin_iv"
+                    android:layout_width="0dp"
+                    android:background="@drawable/bg_home_mining"
+                    app:layout_constraintTop_toBottomOf="@+id/home_mining_pool_iv"
+                    app:layout_constraintStart_toStartOf="@+id/home_bottom_iv"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="16dp"
+                    onClickCommand="@{viewModel.slelctMinerCommand}"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/home_bottom_iv"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/miner_machin_tv"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/home_miner_machin_iv"
+                    app:layout_constraintTop_toTopOf="@+id/home_miner_machin_iv"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_miner_machin_iv"
+                    android:layout_marginStart="16dp"
+                    onClickCommand="@{viewModel.slelctMinerCommand}"
+                    app:layout_constraintEnd_toStartOf="@+id/select_miner_mathin_iv"
+                    android:lines="1"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    tools:text="矿机01"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/color_10161c"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/select_miner_mathin_iv"
+                    android:layout_width="wrap_content"
+                    onClickCommand="@{viewModel.slelctMinerCommand}"
+                    android:src="@drawable/tab_home_select_mining"
+                    app:layout_constraintTop_toTopOf="@+id/home_miner_machin_iv"
+                    app:layout_constraintBottom_toBottomOf="@+id/home_miner_machin_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/home_miner_machin_iv"
+                    android:layout_marginEnd="12dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/bg_current_use_flow_iv"
+                    android:layout_width="0dp"
+                    android:background="@drawable/bg_current_use_flow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/bg_current_incleared_flow_iv"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/home_miner_machin_iv"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="90dp" />
+
+
+                <ImageView
+                    android:id="@+id/bg_current_incleared_flow_iv"
+                    android:layout_width="0dp"
+                    android:background="@drawable/bg_current_uncleared_flow"
+                    app:layout_constraintStart_toEndOf="@+id/bg_current_use_flow_iv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/home_miner_machin_iv"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:id="@+id/use_flow_tv"
+                    android:layout_width="wrap_content"
+                    tools:text="2.00"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="@+id/bg_current_use_flow_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/bg_current_use_flow_iv"
+                    app:layout_constraintTop_toTopOf="@+id/bg_current_use_flow_iv"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/bg_current_use_flow_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/bg_current_use_flow_iv"
+                    app:layout_constraintTop_toBottomOf="@+id/use_flow_tv"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    android:text="@string/home_current_use_flow"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/uncleared_tv"
+                    android:layout_width="wrap_content"
+                    tools:text="2200.00"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    app:layout_constraintStart_toStartOf="@+id/bg_current_incleared_flow_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/bg_current_incleared_flow_iv"
+                    app:layout_constraintTop_toTopOf="@+id/bg_current_incleared_flow_iv"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/bg_current_incleared_flow_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/bg_current_incleared_flow_iv"
+                    app:layout_constraintTop_toBottomOf="@+id/uncleared_tv"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    android:text="@string/home_uncleared_flow"
+                    android:layout_height="wrap_content" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

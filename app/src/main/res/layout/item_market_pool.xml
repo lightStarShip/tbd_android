@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.star.theBigDipper.util.Utils" />
+
+        <variable
+            name="item"
+            type="com.star.theBigDipper.viewmodel.PacketsMarketItemVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="16dp"
+        android:background="@{item.background}">
+
+        <TextView
+            android:id="@+id/mine_pool_name_tv"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@{item.minePool.name}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mine_pool_address_tv"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:text="@{item.minePool.address}"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mine_pool_name_tv"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/last_day_used_bytes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:text="@{@string/last_day_used_bytes +  Utils.INSTANCE.convertBandWidth(item.minePool.pool_stat.last_day_used_m_bytes*1000000)}"
+            android:textColor="@color/color_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mine_pool_address_tv" />
+
+
+        <TextView
+            android:id="@+id/last_month_used_bytes"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:text="@{@string/last_month_used_bytes + Utils.INSTANCE.format(item.minePool.pool_stat.last_month_used_g_bytes) +@string/bytes_g}"
+            android:textColor="@color/color_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_day_used_bytes_tv"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/total_bytes"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:text="@{@string/total_bytes_g + Utils.INSTANCE.format(item.minePool.pool_stat.total_used_g_bytes) +@string/bytes_g}"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_month_used_bytes"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_recharge"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            android:text="@{@string/total_recharge+ item.minePool.pool_stat.total_charged_user_cnt }"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_bytes"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/recharge_tv"
+            android:layout_width="82dp"
+            android:text="@string/recharge_recharge"
+            android:gravity="center"
+            android:layout_marginEnd="6dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:onClickCommand="@{item.rechargeCommand}"
+            android:textColor="@{item.textColor}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_buy_packet"
+            android:layout_height="44dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

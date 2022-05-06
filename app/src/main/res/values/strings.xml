@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">BigDipper</string>
+
+    <string name="sure">OK</string>
+    <string name="hop">HOP</string>
+    <string name="tips">Tips</string>
+    <string name="ethLabel">ETH</string>
+    <string name="cancel">Cancel</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_wallet">Wallet</string>
+    <string name="contentDescription"> </string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="open_wallet">Open wallet</string>
+    <string name="my_pool_renewal_fee">Renew</string>
+    <string name="tab_flow_market">Flow Market</string>
+    <string name="testing_speed">testing speed…</string>
+    <string name="copy_success">Copy successed!</string>
+    <string name="loading_success">Load success</string>
+    <string name="camera">Camera access required</string>
+    <string name="password_error">password error</string>
+    <string name="wallet_error">Please scan the correct wallet QR code</string>
+    <string name="save_error">Wallet local storage failed</string>
+    <string name="protocol_topped">The service has stopped, kill the app and re-enter</string>
+    <string name="no_walet">Failed to read the wallet, kill the app to re-enter</string>
+    <string name="approving">Blockchain \nApproving…</string>
+    <string name="creating_account">Creating account…</string>
+    <string name="creating_tx">Creating Blockchain Tx…</string>
+    <string name="get_data_failed">Failed to get data！</string>
+    <string name="empty_order">empty,Pull down to refresh</string>
+    <string name="notification_title">The Big Dipper Network</string>
+    <string name="mining_pool_exchange_mine_pool">Switch in the mining pool…</string>
+    <string name="packets_insufficient_need_recharge">Insufficient flow, need to recharge</string>
+    <string name="rationale_extra_write">Need to apply for read and write memory permissions</string>
+    <string name="blockchain_time_out">Block synchronization timed out,\n Please confirm that the last block is successfully packaged and operate again</string>
+    <string name="apply_free_coin_blockchain_time_out">Block synchronization timed out,\nCheck if the block synchronization is successful</string>
+
+    <!--    create account-->
+    <string name="create_account_or">or</string>
+    <string name="create_account_create">create</string>
+    <string name="create_account_title">Create Account</string>
+    <string name="create_account_import_error">Import eror</string>
+    <string name="create_account_empty_account">Empty Account</string>
+    <string name="create_account_failed">Create Account Failed</string>
+    <string name="create_account_import_account">Import Account</string>
+    <string name="create_account_enter_password">Enter Password</string>
+    <string name="create_account_import_success">Import success</string>
+    <string name="create_account_read_album">Read from the media</string>
+    <string name="create_account_import_private_key">Import imtoken private key</string>
+    <string name="create_account_input_private_key">Input imtoken private key</string>
+    <string name="create_account_scanning_qr_code">Scanning QR code</string>
+    <string name="create_account_success">Create an account successfully</string>
+    <string name="create_account_error_import_image">Error: import image</string>
+    <string name="create_account_reenter_password">Confirm Your Password</string>
+    <string name="create_account_import_account_failed">Import account failed</string>
+    <string name="create_account_enter_ethereum_password">Enter Ethereum Password</string>
+    <string name="create_account_select_import_mode">Please select the import mode.</string>
+    <string name="create_account_twice_password_not_same">Inconsistent password input twice</string>
+    <string name="create_account_scan_pirate_account_qr">Please scan the pirate account QR code</string>
+    <string name="create_account_import_imtoken_error">Failed to import imtoken</string>
+    <string name="create_account_imtoken_error">imtoken private key error</string>
+
+    <!--    home-->
+    <string name="home_use">Connected</string>
+    <string name="home_connect">Connecting</string>
+    <string name="home_global_model">Global</string>
+    <string name="home_uncleared_flow">Credit</string>
+    <string name="home_intelligent_model">Smart</string>
+    <string name="home_disconnected">Disconnected</string>
+    <string name="home_current_use_flow">Recharge flow</string>
+    <string name="home_select_miner">Please select a miner</string>
+    <string name="home_init_service_fail">Service failed to start, please start again</string>
+    <string name="home_select_subscribed_mining_pool">Please select a mining pool that is already subscribed</string>
+    <string name="home_switch_testnet">Switch testnet</string>
+    <string name="home_switch_mainnet">Switch mainnet</string>
+    <string name="home_switch_testnet_message">Exit the app, switch to the test network, and you can receive coins on the wallet interface to test the app for free</string>
+    <string name="home_switch_mainnet_message">Are you sure you want to switch to the mainnet ? After switching the official network, you cannot switch to the test network again.</string>
+    <string name="home_sync_data">Syncing block data, please open later</string>
+    <string name="home_sync_data_error">Sync block failed, sync again</string>
+    <!--    wallet-->
+    <string name="wallet__dns">DNS:</string>
+    <string name="wallet_help">Help</string>
+    <string name="wallet_token_unit">hop</string>
+    <string name="wallet_flow_unit_eth">ETH</string>
+    <string name="wallet_flow_unit_hop">HOP</string>
+    <string name="wallet_create">Creat/Import</string>
+    <string name="wallet_course">Mining course</string>
+    <string name="wallet_export">Export Account</string>
+    <string name="wallet_apply_fail">apply failed</string>
+    <string name="wallet_transaction">Transaction</string>
+    <string name="wallet_export_fail">Export failed</string>
+    <string name="wallet_get_free_coin">get free coin</string>
+    <string name="wallet_apply_success">apply success</string>
+    <string name="wallet_pirate_account">pirate Account.jpg</string>
+    <string name="wallet_get_free_eth">0.1 eth free coin</string>
+    <string name="wallet_export_success">Export succeeded</string>
+    <string name="wallet_get_free_hop">1000 Hop free coin</string>
+    <string name="wallet_operation_guide">Operation guide</string>
+    <string name="wallet_clear_local_data">Clear local data</string>
+    <string name="wallet_get_free_coin_title">get free coin</string>
+    <string name="wallet_clear_success">Cleared successfully</string>
+    <string name="wallet_replace_account_title">Are you sure?</string>
+    <string name="wallet_new_version">View the latest version</string>
+    <string name="wallet_main_network_address">Main net address</string>
+    <string name="wallet_help_address">https://t.me/hopcommunity</string>
+    <string name="wallet__replace_msg">Replace you current wallet?</string>
+    <string name="wallet_dns_empty">Please input a new DNS address</string>
+    <string name="wallet_course_address">https://docs.hyperorchid.org/</string>
+    <string name="wallet_dns_failed">Please enter the correct ip address</string>
+    <string name="wallet_please_create_account">Please create an account first</string>
+    <string name="wallet_update_dns_success">Successfully modified,Please open again</string>
+    <string name="wallet_apply_free_token_des">When eth is less than 0.05, you can apply for eth, and when hop is less than 1,000, you can apply for token</string>
+
+    <!--    transaction-->
+    <string name="transaction_hash">Hash</string>
+    <string name="transaction_error">error</string>
+    <string name="transaction_pending">Pending</string>
+    <string name="transaction_completed">Completed</string>
+    <string name="pull_down_refresh">Pull down to refresh the package status</string>
+
+    <!--    recharge-->
+    <string name="recharge_recharge">Buy</string>
+    <string name="recharge_hop_money">money</string>
+    <string name="recharge_custom">customize</string>
+    <string name="recharge_sync_pool">Sync Pool</string>
+    <string name="recharge_hop_coin">Hop balance</string>
+    <string name="recharge_buy_flow">Purchase flow</string>
+    <string name="recharge_buy_flow_number">flow(M)</string>
+    <string name="recharge_hop_address">Hop address</string>
+    <string name="recharge_submit_order">Submit orders</string>
+    <string name="recharge_buy_packets_error">Buy error</string>
+    <string name="recharge_recharge_flow">Recharge flow</string>
+    <string name="recharge_approve_error">approve error!</string>
+    <string name="recharge_sync_pool_failed">Sync Pool failed</string>
+    <string name="recharge_sync_pool_success">Sync Pool Success</string>
+    <string name="recharge_buy_packets">BlockChain \nBuying packets…</string>
+    <string name="recharge_packets_mine_pool_address">Mining Pool Address</string>
+    <string name="recharge_eth_insufficient_balance">ETH insufficient balance!</string>
+    <string name="recharge_token_insufficient_balance">%s insufficient balance!</string>
+    <string name="recharge_pending">The transaction is being packaged, please do not repeat the operation</string>
+
+    <!--    splash-->
+    <string name="splash_update_version">Update</string>
+    <string name="splash_new_version">New Version</string>
+    <string name="splash_current_version_name">Current </string>
+    <string name="splash_close_other_vpn_app">Please close other VPN apps </string>
+    <string name="splash_forbidden_permission_des">Permission denied Cannot use app, reapply.</string>
+    <string name="splash_network_unavailable">The network is not available, please turn on the network</string>
+    <string name="splash_blockchain_sync_error">Block synchronization is abnormal, please click to confirm to synchronize again</string>
+
+    <!--    market-->
+    <string name="bytes_g">G</string>
+    <string name="total_bytes_g">Used:</string>
+    <string name="total_recharge">Total recharge times :</string>
+    <string name="last_month_used_bytes">last month used bytes：</string>
+    <string name="last_day_used_bytes">last day used bytes：</string>
+    <string name="market_my_pool">My pools</string>
+    <string name="market_websiteAddress">URL：</string>
+
+    <!--    mine machine-->
+    <string name="mine_machine">Mine machine list</string>
+    <string name="mine_machine_list_pin_all_miners">Overall speed</string>
+    <string name="mine_machine_measurement_network_speed">Test speed</string>
+
+    <string name="guide1">1.Click Wallet</string>
+    <string name="guide2">2.Get ETH test coin</string>
+    <string name="guide3">3.Get Hop test coin</string>
+    <string name="guide4">4.Click flow market</string>
+    <string name="guide5">5.Click on the mining pool to purchase traffic</string>
+    <string name="guide6">6.Choose the size of the purchase data</string>
+    <string name="guide7">7.Select the purchased mining pool</string>
+    <string name="guide8">8.Select a miner </string>
+    <string name="guide9">9.Open vpn</string>
+
+</resources>

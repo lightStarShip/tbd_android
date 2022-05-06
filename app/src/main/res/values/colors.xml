@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorprimary">#ff212121</color>
+    <color name="coloraccent">#73aef6</color>
+
+    <color name="split_line">#ededed</color>
+    <color name="color_424242">#424242</color>
+    <color name="color_e5e5ec">#e5e5ec</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_6ab8ff">#6ab8ff</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+    <color name="color_dedee3">#dedee3</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_f5f6f9">#f5f6f9</color>
+    <color name="color_f6f6f7">#f6f6f7</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_25262a">#25262a</color>
+    <color name="color_fbfbfc">#fbfbfc</color>
+    <color name="color_a4a4a7">#a4a4a7</color>
+    <color name="color_515257">#515257</color>
+    <color name="color_6791c8">#6791c8</color>
+    <color name="color_10161c">#10161c</color>
+    <color name="color_6179b0">#6179b0</color>
+    <color name="color_b6b8ca">#b6b8ca</color>
+    <color name="color_6c77ac">#6c77ac</color>
+    <color name="color_f0be50">#f0be50</color>
+    <color name="color_6d97ce">#6d97ce</color>
+    <color name="color_f7aa6e">#f7aa6e</color>
+    <color name="color_4cc2d0">#4cc2d0</color>
+    <color name="color_717171">#717171</color>
+    <color name="color_ce6d8e">#ce6d8e</color>
+    <color name="color_5a84c2">#5a84c2</color>
+    <color name="color_c25a7b">#c25a7b</color>
+    <color name="color_aa6791c8">#aa6791c8</color>
+    <color name="color_131517">#131517</color>
+
+</resources>
